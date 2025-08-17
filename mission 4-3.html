@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--画面に表示する-->
+    <div id ="omikuji">ここに表示する</div>
+    <script>
+        //配列kujiを定義
+        var kuji = ["大吉","中吉","小吉"];
+        //ランダム関数を使い、０から２の間の乱数を作成
+        var suuti1 = Math.random();
+        var suuti2 = suuti1 * 3;
+        //作成した乱数を切り捨てし、変数suuti2に格納する
+        suuti2 = Math.floor(suuti2);
+        //変数resultにくじの結果を格納する
+        var result = kuji[suuti2];
+        //divタグの内容をくじの結果に書き換える
+        var object = document.getElementById("omikuji");
+        object.innerText = result;
+    </script>
+</body>
+</html>
