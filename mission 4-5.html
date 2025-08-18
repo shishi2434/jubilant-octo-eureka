@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おみくじ</title>
+</head>
+<body>
+    <link rel="stylesheet" href="mission 4-5.css">
+    <!--画面に表示する-->
+    <div align="center" style="font-size:50px; font-family: 'SimSun', monospace;">今日の運勢を占ってみよう！</div>
+    
+    <!--ボタンを押すと関数名kansuuが実行される-->
+    <div class="ichi">
+        <button onclick="kansuu()" id="start" style="width: 200px; height: 50px; font-size: 20px;">くじを引く</button>
+    </div>
+
+
+
+    <div align="center" class="font" id ="omikuji"></div>
+    <div class="hako">
+        <img id="image" src="hako.png">
+    </div>
+
+    <!--mission 4-4.jsをhtmlに読み込む-->
+    <script src="mission 4-5.js"></script>
+</body>
+</html>
